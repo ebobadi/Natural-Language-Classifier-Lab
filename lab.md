@@ -72,7 +72,7 @@ NLC_PASSWORD=<password you copied from credentials above>
     ```
   * The training takes about 6 minutes. In order to check if its done you can query using the following curl command. The `status` should be set to `Available` when the training is done. While waiting, you can complete step 12 and 13 below.
     ```
-    curl -u "${NLC_USERNAME}":"${NLC_PASSWORD}" \
+    curl -u "${NLC_USERNAME}":"${NLC_PASSWORD}"
 "https://gateway.watsonplatform.net/natural-language-classifier/api/v1/classifiers/$NLC_CLASSIFIER_ID"
     ```
 
